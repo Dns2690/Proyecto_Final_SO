@@ -11,7 +11,7 @@ if [ ! -d "$BACKUP_DIR" ]; then
   echo "Carpeta $BACKUP_DIR creada."
 fi
 
-mysqldump -u "$DB_USER" "$DB_NAME" > "$BACKUP_DIR/$ARCHIVO"
+mysqldump -u backupuser -p'linux' "$DB_NAME" > "$BACKUP_DIR/$ARCHIVO"
 
 if [ $? -eq 0 ]; then
   gzip "$BACKUP_DIR/$ARCHIVO"
