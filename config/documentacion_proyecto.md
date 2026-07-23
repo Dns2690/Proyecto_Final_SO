@@ -39,22 +39,22 @@ Anexos: [A. Instalación del sistema operativo](#anexo-a-instalación-del-sistem
 | Servicios | Apache2 (2 Virtual Hosts), MariaDB, cron, scripts Bash |
 
 ```
-                    ┌───────────────────────────────────────┐
+                    ┌────────────────────────────────────────┐
                     │      Ubuntu Server 26.04 (VM UTM)      │
                     │           192.168.50.38                │
-                    │                                         │
-  empresa.local ───▶│  Apache2 :80                            │
-  curso.local   ───▶│   ├─ VirtualHost empresa.local           │
-                    │   └─ VirtualHost curso.local              │
-                    │                                         │
-                    │  MariaDB (proyecto_so: 3 tablas)        │
-                    │                                         │
-                    │  cron ─┬─ backup_db.sh   (diario 2AM)   │
-                    │        └─ monitor.sh     (cada minuto)  │
-                    │                                         │
-                    │  Logs: ~/backups/backup.log             │
-                    │        ~/monitoreo/monitor.log          │
-                    └───────────────────────────────────────┘
+                    │                                        │
+  empresa.local ───▶│  Apache2 :80                           │
+  curso.local   ───▶│   ├─ VirtualHost empresa.local         │
+                    │   └─ VirtualHost curso.local           │
+                    │                                        │
+                    │  MariaDB (proyecto_so: 3 tablas)       │
+                    │                                        │
+                    │  cron ─┬─ backup_db.sh   (diario 2AM)  │
+                    │        └─ monitor.sh     (cada minuto) │
+                    │                                        │
+                    │  Logs: ~/backups/backup.log            │
+                    │        ~/monitoreo/monitor.log         │
+                    └────────────────────────────────────────┘
 ```
 
 ---
@@ -534,7 +534,7 @@ El token reemplaza la autenticación por contraseña. Evidencia del push exitoso
 
 ### B.2 Colaboración entre integrantes
 
-El repositorio (`https://github.com/Dns2690/Proyecto_Final_SO`) debe reflejar commits de ambos integrantes del grupo. Al momento de esta versión de la documentación, el historial solo registra commits de Denis Salazar; queda pendiente que el segundo integrante clone el repositorio, realice sus propios commits (por ejemplo, sobre la documentación o los sitios web) y los suba, para cumplir el criterio de la rúbrica "Repositorio Git — bien organizado con commits" de ambos autores.
+El repositorio (`https://github.com/Dns2690/Proyecto_Final_SO`) debe reflejar commits de ambos integrantes del grupo. En este caso se realizó individualmente, pero si refleja la implementación del sistema.
 
 ---
 
